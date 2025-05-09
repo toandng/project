@@ -2,13 +2,13 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 
+import "react-toastify/dist/ReactToastify.css";
 import styles from "./LoginForm.module.scss";
-import Button from "../../components/button";
+import Button from "../../components/Button";
 import config from "../../config";
 import Form, { TextInput } from "../..//components/Forms";
-import useUser from "../..//hooks/useUser";
+import useUser from "../../hooks/useUser";
 import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 import { loginUser, fetchAuthUser } from "../../features/auth/authSlice";
 
